@@ -38,28 +38,46 @@ public class MainActivity extends AppCompatActivity implements ListenerInter{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //loading database
         DiaryDbHelper dbh=new DiaryDbHelper(this);
         SQLiteDatabase sqld=dbh.getReadableDatabase();
         Cursor c = sqld.query("photo_diary_table", null, null, null, null, null, null);
+
+        //getting no. of records
         int n = c.getCount();
         c.close();
+
+        //hiding the text view if records are present
         if(n>0){
             TextView wel=findViewById(R.id.welc);
             wel.setVisibility(View.INVISIBLE);
         }
+        //loading recycler view for records
         RecyclerView imglist=(RecyclerView) findViewById(R.id.plister);
         imglist.setLayoutManager(new LinearLayoutManager(this));
+
+        //setting adapter for the recycler view
         ImageAdapter ia=new ImageAdapter(sqld);
         imglist.setAdapter(ia);
+
+        //setting listener for the adapter
         ia.setInterListener(this);
     }
-    public void onAdd(View view) {
+
+    //onClick method for add button
+    public void onAdd(View view) {        
+        //start Add_Edit activity with add purpose
         Intent i=new Intent(this,Add_Edit.class);
         i.putExtra("purpose","add");
         startActivity(i);
     }
+
+    //onClick method for delete button
     @Override
     public void delClicked(int id){
+
+        //setting up dialog box
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.del_dialog);
         dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.del_bg));
@@ -67,32 +85,42 @@ public class MainActivity extends AppCompatActivity implements ListenerInter{
         dialog.setCancelable(true);
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog.show();
+
+        //yes button operations
         Button yes=dialog.findViewById(R.id.yesdel);
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //deleting entry
                 DiaryDbHelper dbh=new DiaryDbHelper(MainActivity.this);
                 SQLiteDatabase sqld=dbh.getWritableDatabase();
                 sqld.delete("photo_diary_table", "id=?", new String[]{String.valueOf(id)});
                 MainActivity.this.recreate();
             }
         });
+
+        //no button operations
         Button no=dialog.findViewById(R.id.nodel);
         no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //cancelling dialog box
                 dialog.cancel();
             }
         });
     }
+
+    //onClick method for edit button
     @Override
     public void editClicked(int id){
+        //start Add_Edit activity with edit purpose
         Intent i=new Intent(this,Add_Edit.class);
         i.putExtra("purpose","edit");
         i.putExtra("id",id);
         startActivity(i);
     }
 
+    //function to setup overflow menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -100,13 +128,18 @@ public class MainActivity extends AppCompatActivity implements ListenerInter{
         return true;
     }
 
+    //if 'gallery' option is selected in the overflow menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        //loading database
         DiaryDbHelper dbh = new DiaryDbHelper(this);
         SQLiteDatabase sqld = dbh.getReadableDatabase();
         Cursor c = sqld.query("photo_diary_table", null, null, null, null, null, null);
         int n = c.getCount();
         c.close();
+
+        //starting new activity if records are present
         Intent i = new Intent(MainActivity.this, Gallery.class);
         if (n > 0)
             startActivity(i);

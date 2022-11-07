@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+//setting up SQLite database
 public class DiaryDbHelper extends SQLiteOpenHelper {
     public static int versiondb=1;
     public static String dbname="PhotoDiaryData.db";
