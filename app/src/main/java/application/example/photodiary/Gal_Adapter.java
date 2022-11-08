@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+//setting up adapter vor gallery view of the app
 public class Gal_Adapter extends RecyclerView.Adapter<Gal_Adapter.SlimAdapter>{
     SQLiteDatabase sqld;
     GalListener li;
@@ -26,11 +27,16 @@ public class Gal_Adapter extends RecyclerView.Adapter<Gal_Adapter.SlimAdapter>{
         View view=inflater.inflate(R.layout.slimg,parent,false);
         return new SlimAdapter(view);
     }
+
+    //setting up event listener interface
     public void setInterListener(GalListener list){
         li=list;
     }
+
+    //binding images to the view
     @Override
     public void onBindViewHolder(@NonNull SlimAdapter holder, int position) {
+        //getting the picture
         Cursor c=sqld.query("photo_diary_table",null,null,null,null,null,null);
         int l=c.getCount();
         c.moveToPosition(l-1-position);
@@ -39,8 +45,12 @@ public class Gal_Adapter extends RecyclerView.Adapter<Gal_Adapter.SlimAdapter>{
         int idt=c.getInt(idi);
         byte[] bi=c.getBlob(ii);
         Bitmap bmp= BitmapFactory.decodeByteArray(bi,0,bi.length);
+
+        //binding image to the view
         holder.img.setImageBitmap(bmp);
         c.close();
+
+        //setting up event listener for the picture
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +59,7 @@ public class Gal_Adapter extends RecyclerView.Adapter<Gal_Adapter.SlimAdapter>{
         });
     }
 
+    //getting no. of records/items
     @Override
     public int getItemCount() {
         Cursor c=sqld.query("photo_diary_table",null,null,null,null,null,null);

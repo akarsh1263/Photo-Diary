@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
 
+//setting up adapter for main activity's recycler view
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHolder> {
     SQLiteDatabase sqld;
     ListenerInter li;
@@ -33,11 +34,17 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         View view=inflater.inflate(R.layout.image_layout,parent,false);
         return new ImageViewHolder(view);
     }
+
+    //setting up listener interface for the adapter
     public void setInterListener(ListenerInter list){
         li=list;
     }
+
+    //Binding images and notes to the views
     @Override
     public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {
+
+        //getting records' data
         Cursor c=sqld.query("photo_diary_table",null,null,null,null,null,null);
         int l=c.getCount();
         c.moveToPosition(l-1-position);
@@ -46,18 +53,24 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         int ni=c.getColumnIndex("note");
         int ii=c.getColumnIndex("pic");
         int idt=c.getInt(idi);
+
+        //binding records' data to the view holder
         holder.date_text.setText(c.getString(di));
         holder.note_text.setText(c.getString(ni));
         byte[] bi=c.getBlob(ii);
         Bitmap bmp=BitmapFactory.decodeByteArray(bi,0,bi.length);
         holder.img.setImageBitmap(bmp);
         c.close();
+
+        //setting up delete button event listener
         holder.dlt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 li.delClicked(idt);
             }
         });
+
+        //setting up edit button event listener
         holder.edt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,6 +79,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         });
     }
 
+    //getting no. of items/records
     @Override
     public int getItemCount() {
         Cursor c=sqld.query("photo_diary_table",null,null,null,null,null,null);
@@ -74,6 +88,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         return n;
     }
 
+    //setting up view holder
     public class ImageViewHolder extends RecyclerView.ViewHolder{
         TextView date_text;
         TextView note_text;
