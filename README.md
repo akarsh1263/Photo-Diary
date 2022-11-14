@@ -1,6 +1,5 @@
 # Photo Diary
 ### Write notes for your photos, save it and review it later. The app helps you maintain a photo diary
-<img src= "https://img.shields.io/github/license/akarsh1263/Photo-Diary.svg" height="30">
 
 ## Features
 - 1 
