@@ -15,6 +15,7 @@ Write notes for your photos, save it and review it later. The app helps you main
 <img src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white"   height="30"> 
 
 ### Instuctions
+  *make sure you allow access to gallery
 1. hii
 
  ```sh
