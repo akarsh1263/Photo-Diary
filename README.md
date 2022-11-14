@@ -4,7 +4,7 @@
 ## Features
 1.
 img: 
-![image](https://user-images.githubusercontent.com/85754626/201661608-e52d6f2b-c272-457b-b082-c5035aba40d6.png =300)
+![image](https://user-images.githubusercontent.com/85754626/201661608-e52d6f2b-c272-457b-b082-c5035aba40d6.png =300x)
 
 2.
 img:
