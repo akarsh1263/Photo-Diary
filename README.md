@@ -8,12 +8,16 @@ Write notes for your photos, save it and review it later. The app helps you main
  src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"   height="30"> 
 
 
-### Features
-- Home Page: Allows you to select and add a picture from the gallery, and view previously added pictures with notes.
+### Features and Interfaces
+#### Home Page: 
+- Allows you to select and add a picture from the gallery
 <img src="https://user-images.githubusercontent.com/85754626/201663042-e76157a7-e248-4ddb-9bec-3fdf2d730718.png"   height="300"> 
-<img src="https://user-images.githubusercontent.com/85754626/201724768-b40edbcc-2642-4b45-9393-ed19fe23d3c3.jpg" height=300">
+
+- View previously added pictures with notes
+<img src="https://user-images.githubusercontent.com/85754626/201728769-737ec9b1-6d27-4fc6-878f-5d5555684d15.jpg" height="300">
+
 - 2
-<img src="https://user-images.githubusercontent.com/85754626/201663042-e76157a7-e248-4ddb-9bec-3fdf2d730718.png"   height="300">
+
 - 3
 
 
