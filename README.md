@@ -32,9 +32,9 @@ Write notes for your photos, save it and review it later. The app helps you main
 git clone https://github.com/akarsh1263/Photo-Diary.git
 ```
 
-- byee
+- Open the project in Android Studio and run it on an emulator
 
-- mm
+- Or, go to Build -> Build apk, transfer the built apk to and android device and run it
 
 *make sure you allow access to gallery
 ### contact
