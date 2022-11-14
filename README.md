@@ -11,11 +11,13 @@ Write notes for your photos, save it and review it later. The app helps you main
 
 ### Tools and Technologies
 
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"   height="30"> 
-<img src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white"   height="30"> 
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"   height="22"> 
+<img src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white"   height="22"> 
+<img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"   height="22">
+
 
 ### Instuctions
-  *make sure you allow access to gallery
+  
 1. hii
 
  ```sh
@@ -25,4 +27,5 @@ git clone https://github.com/akarsh1263/Photo-Diary.git
 
 3.mm
 
+*make sure you allow access to gallery
 ### contact
