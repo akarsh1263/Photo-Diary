@@ -1,28 +1,28 @@
 # Photo Diary
 Write notes for your photos, save it and review it later. The app helps you maintain a photo diary
 
-hehehblahh
 
 ### Tools and Technologies
 
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"   height="22">   <img  src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white"   height="22">  <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"   height="22">
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"   height="30">   <img  src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white"   height="30">  <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"   height="30"> <img
+ src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"   height="30"> 
 
 
 ### Features
-- 1 
-<img src="https://user-images.githubusercontent.com/85754626/201663042-e76157a7-e248-4ddb-9bec-3fdf2d730718.png"   height="300">
+- Home Page: Allows you to select and add a picture from the gallery, and view previously added pictures with notes.
+<img src="https://user-images.githubusercontent.com/85754626/201663042-e76157a7-e248-4ddb-9bec-3fdf2d730718.png"   height="300"> 
+<img src="https://user-images.githubusercontent.com/85754626/201724768-b40edbcc-2642-4b45-9393-ed19fe23d3c3.jpg" height=300">
 - 2
 <img src="https://user-images.githubusercontent.com/85754626/201663042-e76157a7-e248-4ddb-9bec-3fdf2d730718.png"   height="300">
 - 3
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"   height="30"> 
+
 
 
 
 
 ### Instuctions
   
-1. hii
-
+1. 
  ```sh
 git clone https://github.com/akarsh1263/Photo-Diary.git
 ```
