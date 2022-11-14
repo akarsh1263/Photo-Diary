@@ -37,4 +37,7 @@ git clone https://github.com/akarsh1263/Photo-Diary.git
 - Or, go to Build -> Build apk, transfer the built apk to and android device and run it
 
 *make sure you allow access to gallery
-### contact
+
+### Contact
+- <a href="https://www.linkedin.com/in/akarsh-shukla-627447219/">Linkedin</a>
+- Email: vyoopsoftwares@gmail.com
