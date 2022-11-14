@@ -13,26 +13,28 @@ Write notes for your photos, save it and review it later. The app helps you main
 - Allows you to select and add a picture from the gallery
 <img src="https://user-images.githubusercontent.com/85754626/201663042-e76157a7-e248-4ddb-9bec-3fdf2d730718.png"   height="300"> 
 
-- View previously added pictures with notes
+- View previously added pictures with notes with edit and delete option
 <img src="https://user-images.githubusercontent.com/85754626/201728769-737ec9b1-6d27-4fc6-878f-5d5555684d15.jpg" height="300">
 
-- 2
+#### Add/Edit Page:
+- Allows you to write a note or edit a previously saved note for a picture. The data is store on a local SQLite database
+<img src="https://user-images.githubusercontent.com/85754626/201737067-c4430c4b-1538-45c0-b314-53678f35c744.jpg" height="300">
 
-- 3
-
-
+#### Gallery Page:
+- View all the images in one page
+<img src="https://user-images.githubusercontent.com/85754626/201740115-5458c6f1-b7cd-44c1-8de9-12e4e11b0053.jpg" height="300">
 
 
 
 ### Instuctions
-  
-1. 
- ```sh
+-  Fork and clone the repo:
+```sh
 git clone https://github.com/akarsh1263/Photo-Diary.git
 ```
-2. byee
 
-3.mm
+- byee
+
+- mm
 
 *make sure you allow access to gallery
 ### contact
