@@ -11,6 +11,13 @@
 
 
 ## Instuctions
-```sh
+- 1. hii
+
+ ```sh
 git clone https://github.com/akarsh1263/Photo-Diary.git
 ```
+- 2. byee
+
+- 3.mm
+
+
