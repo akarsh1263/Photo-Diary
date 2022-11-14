@@ -11,4 +11,6 @@
 
 
 ## Instuctions
-$ git clone https://github.com/akarsh1263/Photo-Diary.git
+```sh
+git clone https://github.com/akarsh1263/Photo-Diary.git
+```
