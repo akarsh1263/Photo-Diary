@@ -11,7 +11,7 @@ Write notes for your photos, save it and review it later. The app helps you main
 
 ### ### Tools and Technologies
 
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" height="30>
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"   height="30"> 
 
 
 ### Instuctions
