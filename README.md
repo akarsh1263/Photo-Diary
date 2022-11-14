@@ -41,3 +41,6 @@ git clone https://github.com/akarsh1263/Photo-Diary.git
 ### Contact
 - <a href="https://www.linkedin.com/in/akarsh-shukla-627447219/">Linkedin</a>
 - Email: vyoopsoftwares@gmail.com
+
+### Useful Links
+- <a href="https://play.google.com/store/apps/details?id=application.example.photodiary">Install the app from Google Playstore</a>
