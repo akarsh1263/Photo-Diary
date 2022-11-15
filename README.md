@@ -17,7 +17,7 @@ Write notes for your photos, save it and review it later. The app helps you main
 <img src="https://user-images.githubusercontent.com/85754626/201728769-737ec9b1-6d27-4fc6-878f-5d5555684d15.jpg" height="300">
 
 #### Add/Edit Page:
-- Allows you to write a note or edit a previously saved note for a picture. The data is store on a local SQLite database
+- Allows you to write a note or edit a previously saved note for a picture. The data is stored on a local SQLite database
 <img src="https://user-images.githubusercontent.com/85754626/201737067-c4430c4b-1538-45c0-b314-53678f35c744.jpg" height="300">
 
 #### Gallery Page:
