@@ -44,3 +44,4 @@ git clone https://github.com/akarsh1263/Photo-Diary.git
 
 ### Useful Links
 - <a href="https://play.google.com/store/apps/details?id=application.example.photodiary">Install the app from Google Playstore</a>
+- <a href="https://drive.google.com/file/d/1B7cYenEbPL-dS4VGAqbF2twDGTdQXhGc/view?usp=share_link">App Demo</a>
